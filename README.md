@@ -1,5 +1,5 @@
 ####Expanded Food and Nutrition Education Program
-- - - - - - - - - - - - 
+======
 Expanded Food and Nutrition Education Program, affectionately known as EFNEP is a University of Connecticut based outreach program.
 
 
