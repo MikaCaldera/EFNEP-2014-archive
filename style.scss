@@ -1,0 +1,534 @@
+/*
+ Theme Name:   EFNEP
+ Theme URI:    http://webdev.uconn.edu/
+ Description:  EFNEP
+ Author:       Mika Caldera
+ Author URI:   http://www.mikakitty.com/
+ Template:     cornerstone
+ Version:      1.0.0
+ Tags:         light, large hero, 
+ Text Domain:  uconn.edu
+*/
+
+@import url("../cornerstone/style.css");
+@import url("../efnep/css/font.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+//Primary Colors
+$purple: 		rgba(86, 54, 146, 1);
+$green:			rgba(43, 174, 73, 1);
+$blue:			rgba(62, 145, 204, 1);
+$orange:		rgba(244, 110, 51, 1);
+$red:			rgba(208, 32, 17, 1);
+//Grey Scale
+$lightestgrey:	rgba(248, 248, 248, 1);
+$lightgrey:		rgba(124, 135, 142, 1);
+$darkgrey:		rgba(49, 53, 55, 1);	
+$darkestgrey:	rgba(26, 28, 29, 1);
+//Black and White
+$white:			rgba(255, 255, 255, 1);
+$black:			rgba(0, 0, 0, 1);
+//Fonts 
+$stack: 	'Helvetica Neue', 'Calibri', sans-serif;
+$second:	'georgia';
+//Text Sizing
+$size-body:		14px;
+$size-h1:		36px;
+$size-h2:		30px;
+$size-h3:		24px;
+$size-h4:		18px;
+$size-h5:		16px;
+$size-h6:		12px;
+//Line Height
+$line-height: 1.5em;
+//Breakpoints @media screen and (max-device-width: 320px) {)
+$break-xsmall: 	320px;
+$break-small:	500px;	
+$break-meduim:	768px;
+$break-large:	992px;
+$break-xlarge:	1200px;
+
+//Start of code  
+body{
+	font-family: $stack;
+}
+a{
+	color:$blue;
+	&:hover{
+		color:$blue;
+	}
+}
+#uc-header{
+	border-bottom:none;
+}
+//Masthead
+#masthead{
+	position:relative;
+		#site-title{
+			background:$green;
+			.search-box{
+				display:none;
+			}
+		}
+		.hidden-xs {
+		display: block!important;
+		}
+		#nav-wrapper{
+			position:relative;
+			top:-20px;
+		}
+}
+#site-navigation{
+	border:none;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	.navbar-header{
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+			}
+			.navbar-brand{
+				color:$darkestgrey;
+				line-height: 24px;		}
+			.navbar-toggle{
+				border:1px solid darken($orange, 10%);
+				background:$orange;
+					&:hover{
+						background:darken($orange, 10%);
+					}
+					span{
+						&.menu-label{
+						display:none;
+						}
+					}
+			}
+			.navbar-collapse{
+				border-color:$darkestgrey;
+					a:focus{
+						background:$orange;
+					}
+					a:active, a:hover{
+						background:lighten($orange , 10%);
+					}
+			}
+			#primary-nav{
+				ul{
+					li{
+						a{
+							color:$darkgrey;
+						}
+						&.current-menu-ancestor > {
+							a{
+								font-weight: bold;
+
+							}
+						}
+						&.current_page_item {
+							a{
+								font-weight: bold;
+
+							}
+						}
+						&.open{
+							a{
+								background:none;
+							}
+							a:focus{
+								background:$orange;
+							}
+							a:active, a:hover{
+								background:lighten($orange , 10%);
+							}
+						.dropdown-menu{
+							padding:0px 0px;
+							border:none;
+							li{
+								a{
+								padding:10px 20px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//Home Page Styles
+.widget{
+	border-top: 4px solid $lightgrey;
+	.widget-head{
+		padding:0px;
+		.widget-title{
+			padding: 1px 0px 20px 0px;
+			color:$lightgrey;
+			font-family: $stack;
+			font-size:16px;
+		}
+	}
+	ul{
+		list-style:none;
+		padding:0px;
+	}
+	a{
+		&:hover{
+			color:$blue;
+		}
+	}
+	//Text Box 
+	&.widget_text{
+		border-top:none;
+	}
+	//Slide Show
+	&.uc-ssw{
+		border-top:none;
+		.slider-wrapper {
+			padding:0px;
+			.nivoSlider{
+				img{}
+				.nivo-caption{
+					bottom:30px;
+					width:85%;
+					padding: 4%;
+					border-right: 45px solid $orange;
+					background:$darkestgrey;
+					font-family: $second;
+					font-style: italic;
+					font-size: 22px;
+					letter-spacing:1px;
+
+				}
+			}	
+		}
+	}
+	//Opens Hours 
+	&.uc-hours-widget{
+		.content{
+			.table{
+				color:$lightgrey;
+				#uc-hours-caption{
+					display:none;
+					}
+				> thead, > tbody, > tfoot {
+					> tr {
+						> th, > td {
+						padding:3px;
+						border:none
+						}
+						.open-time, .hours-close{
+							font-family: $second;
+							font-style: italic;						
+						}
+					}
+				}
+			}
+		}
+	}
+	//Calendar 
+	&.uc-ecw{
+		.uc-iconcal{
+			padding:0px;
+			.uc-cal-list{
+				.uc-cal-item{
+					a{
+						color:$lightgrey;
+						&:hover{
+							text-decoration:none;
+							color:$blue;
+						}
+						&.uc-cal-event{
+							.uc-cal-event-date{
+								left:0px;
+								border:1px solid $lightgrey;
+								width:30px;
+								-moz-box-shadow: none;
+								-webkit-box-shadow: none;
+								box-shadow: none;
+								.uc-cal-event-month{
+									height:15px;
+								}
+								.uc-cal-event-day{
+									height:15px;
+
+								}
+							}
+							.uc-cal-event-title, .uc-cal-event-time{
+								color:$lightgrey;
+							}
+							.uc-cal-event-title{
+								&:hover{
+									color:$blue;
+								} 
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	//Search
+	&.widget_search{
+		.widget-head{
+			display:none;
+		}
+		.search-box{
+			list-style: none;
+				.navbar-form{
+					margin-top: 20px;
+					padding:0px 0px;
+				}
+		}
+	}
+	//Recent Entries
+	&.widget_recent_entries{
+		ul{
+			width:100%;
+			li{
+				position:relative;
+				display:block;
+				a{
+					color:$blue;
+					&:hover{
+						color:$blue;
+					}
+				}
+				span{
+				position:absolute;
+				right:0px;
+				}
+			}
+		}
+	}
+	//Image Insert Widget 
+	&.widget_sp_image{
+		position:relative;
+		border-top:none;
+		background: $lightestgrey;
+		.widget-title{
+			margin-top:0px;
+			background:$lightestgrey;
+			color: $blue;
+			font-family: $second;
+			font-style: italic;
+			padding:15px 10px
+		}
+		img{
+			width:100%;
+		}
+		p{
+			padding:15px 10px;
+		}
+
+	}
+}
+
+//Secondary Page Header Styles
+.entry-content{
+	h1{
+		font-family: $stack;
+		font-weight: bold;
+	}
+}
+//Widget Styles 
+.content-area{
+	h1, h2, h3, h4, h5, h6{
+		font-family: $stack;
+		font-weight: bold;
+		color: $lightgrey;
+
+	}
+	h1{
+		font-size: 20px;
+	}
+	h2{
+		font-size: 16px;
+	}
+	h3{
+		font-size: 15px;
+	}
+	h4{
+		font-size: 14px;
+	}
+	h5{
+		font-size: 13px;
+	}
+	h6{
+		font-size: 12px;
+	}
+	p{
+		line-height: 1.8em;
+	}
+	blockquote{
+		margin-top:0px;
+		color: $blue;
+		font-family: $second;
+		font-style: italic;
+		padding:15px 10px;
+		text-align: center;
+	}
+	form{
+		label{
+			color:$blue;
+		}
+	}
+	table{
+		th{
+			color:$lightgrey;
+		}
+	}
+	img{
+	}
+}
+//Button Styles 
+.btn{
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	font-family:georgia;
+	font-style:italic;
+		&.btn-default{
+			background: lighten($blue, 10%); /* Old browsers */
+			background: -moz-linear-gradient(top,  lighten($blue, 10%) 0%, #000000 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, lighten($blue, 10%)), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  lighten($blue, 10%) 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, lighten($blue, 10%) 0%,#000000 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  lighten($blue, 10%) 0%,#000000 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  lighten($blue, 10%) 0%,#000000 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='lighten($blue, 10%)', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+			color:$white;
+			border-color: darken($white, 2%);
+			opacity:0.9;
+			&:hover{
+				opacity:0.75;
+			}
+			&:focus{
+				outline-color: $blue;
+				opacity:1;
+			}
+		}
+		&.btn-primary{
+			background: lighten($blue, 10%); /* Old browsers */
+			background: -moz-linear-gradient(top,  lighten($blue, 10%) 0%, $blue 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, lighten($blue, 10%)), color-stop(100%,$blue)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  lighten($blue, 10%) 0%,$blue 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, lighten($blue, 10%) 0%,$blue 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  lighten($blue, 10%) 0%,$blue 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  lighten($blue, 10%) 0%,$blue 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='lighten($blue, 10%)', endColorstr='$blue',GradientType=0 ); /* IE6-9 */
+			color:$white;
+			border-color: darken($blue, 2%);
+			opacity:0.9;
+			&:hover{
+				opacity:0.75;
+			}
+			&:focus{
+				outline-color: $blue;
+				opacity:1;
+			}
+		}
+		&.btn-success{
+			background: lighten($orange, 10%); /* Old browsers */
+			background: -moz-linear-gradient(top,  lighten($orange, 10%) 0%, $orange 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, lighten($orange, 10%)), color-stop(100%,$orange)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  lighten($orange, 10%) 0%,$orange 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, lighten($orange, 10%) 0%,$orange 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  lighten($orange, 10%) 0%,$orange 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  lighten($orange, 10%) 0%,$orange 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='lighten($orange, 10%)', endColorstr='$orange',GradientType=0 ); /* IE6-9 */
+			color:$darkgrey;
+			border-color: darken($orange, 10%);
+			opacity:0.9;
+			&:hover{
+				opacity:0.75;
+			}
+			&:focus{
+				outline-color: $orange;
+				opacity:1;
+			}
+		}
+		&.btn-info{
+			background: lighten($lightgrey, 10%); /* Old browsers */
+			background: -moz-linear-gradient(top,  lighten($lightgrey, 10%) 0%, $lightgrey 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, lighten($lightgrey, 10%)), color-stop(100%,$lightgrey)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  lighten($lightgrey, 10%) 0%,$lightgrey 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, lighten($lightgrey, 10%) 0%,$lightgrey 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  lighten($lightgrey, 10%) 0%,$lightgrey 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  lighten($lightgrey, 10%) 0%,$lightgrey 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='lighten($lightgrey, 10%)', endColorstr='$lightgrey',GradientType=0 ); /* IE6-9 */
+			color:$white;
+			border-color: darken($lightgrey, 5%);
+			opacity:0.9;
+			&:hover{
+				opacity:0.75;
+			}
+			&:focus{
+				outline-color: $lightgrey;
+				opacity:1;
+			}
+		
+		}
+		&.btn-warning{
+			background: lighten($darkgrey, 10%); /* Old browsers */
+			background: -moz-linear-gradient(top,  lighten($darkgrey, 10%) 0%, $darkgrey 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, lighten($darkgrey, 10%)), color-stop(100%,$darkgrey)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  lighten($darkgrey, 10%) 0%,$darkgrey 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, lighten($darkgrey, 10%) 0%,$darkgrey 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  lighten($darkgrey, 10%) 0%,$darkgrey 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  lighten($darkgrey, 10%) 0%,$darkgrey 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='lighten($darkgrey, 10%)', endColorstr='$darkgrey',GradientType=0 ); /* IE6-9 */
+			color:$white;
+			border-color: darken($darkgrey, 5%);
+			opacity:0.9;
+			&:hover{
+				opacity:0.75;
+			}
+			&:focus{
+				outline-color: $darkgrey;
+				opacity:1;
+			}
+		}
+		&.btn-danger{
+			background: lighten($darkestgrey, 10%); /* Old browsers */
+			background: -moz-linear-gradient(top,  lighten($darkestgrey, 10%) 0%, $darkestgrey 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stopdarkestgrey(0%, lighten($darkestgrey, 10%)), color-stop(100%,$darkestgrey)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  lighten($darkestgrey, 10%) 0%,$darkestgrey 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, lighten($darkestgrey, 10%) 0%,$darkestgrey 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  lighten($darkestgrey, 10%) 0%,$darkestgrey 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  lighten($darkestgrey, 10%) 0%,$darkestgrey 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='lighten($darkestgrey, 10%)', endColorstr='$darkestgrey',GradientType=0 ); /* IE6-9 */
+			color:$white;
+			border-color: darken($darkestgrey, 5%);
+			opacity:0.9;
+			&:hover{
+				opacity:0.75;
+			}
+			&:focus{
+				outline-color: $darkestgrey;
+				opacity:1;
+			}
+		}
+		&.btn-link{
+			color:$blue;
+			opacity:0.9;
+			&:hover{
+				opacity:0.75;
+			}
+		}
+		&.active{
+			-moz-box-shadow:    inset 0 0 3px $darkgrey;
+			-webkit-box-shadow: inset 0 0 3px $darkgrey;
+			box-shadow:         inset 0 0 3px $darkgrey;
+		}	
+	}
+
+
+
+
+
+
+
+
+
+
