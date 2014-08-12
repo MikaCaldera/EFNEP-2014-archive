@@ -3,40 +3,26 @@
 */
 /*
 Variables listed in order
-Global - Variables that exist through entire website
-Header
-Navigation bar
-Widgets
-Content
-Footer
+	
+	Header
+	Navigation bar
+	Widgets
+	Content
+	Footer
+	Global 
+		Colors
+		Buttons
+
 */
 
-// Global Default - Fonts, Headers, Basics etc.  
-$font-size-base:          14px !default;
-
-$font-size-h1:			  ceil(($font-size-base * 1.7));
-$font-size-h2:            floor(($font-size-base * 1.5)) ;
-$font-size-h3:            ceil(($font-size-base * 1.15)) ;
-$font-size-h4:            ceil(($font-size-base * 1.15)) ;
-$font-size-h5:            $font-size-base !default;
-$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
-
-$headings-font-weight: 500;
-
-$link-color:            #388ac3;
-$link-hover-color:      darken($link-color, 15%) !default;
-
-
-
-
 // Header
-$header_border:		#2cb04a;
+$header_border:		#000;
 
 $title_parent:			#879197;
-$title_parentHover:		#2cb04a;
+$title_parentHover:		#000;
 
 $title_txt: 			#879197;
-$title_txtHover:		#2cb04a;
+$title_txtHover:		#000;
 
 
 
@@ -47,10 +33,10 @@ $navbar-collapse-max-height: none;
 $navbar-default-bg: transparent;
 $navbar-default-border: transparent;
 
-$navbar-default-link-color:                #3e90cc;
-$navbar-default-link-hover-color:          #f56d33;
+$navbar-default-link-color:                black;
+$navbar-default-link-hover-color:          grey;
 $navbar-default-link-hover-bg:             transparent;
-$navbar-default-link-active-color:         #681108;
+$navbar-default-link-active-color:         darkgrey;
 $navbar-default-link-active-bg:            transparent;
 
 $dropdown-bg:                    #e9e9e9 ;
@@ -98,4 +84,65 @@ $footers-margin: 0;
 $footers-bg: #ffffff;
 $footers-link-color: #5a595a;
 $footers-link-hover: #343434;
+
+
+
+// Global Default
+$font-size-base:          14px ;
+
+$font-size-h1:			  ceil(($font-size-base * 1.7));
+$font-size-h2:            floor(($font-size-base * 1.5)) ;
+$font-size-h3:            ceil(($font-size-base * 1.15)) ;
+$font-size-h4:            ceil(($font-size-base * 1.15)) ;
+$font-size-h5:            $font-size-base ;
+$font-size-h6:            ceil(($font-size-base * 0.85)) ; // ~12px
+
+$headings-font-weight: 500;
+
+$link-color:            #388ac3;
+$link-hover-color:      darken($link-color, 15%) ;
+
+// Primary Colors 
+$brand-primary:         #2cb04a ; //Green
+$brand-success:         #563590 ; //Purple
+$brand-info:            #f56d33 ; //Orange
+$brand-warning:         #fde128 ; //Yellow
+$brand-danger:          #d02110 ; //Red
+
+$gray-darker:            lighten(#000, 13.5%) ; // #222
+$gray-dark:              lighten(#000, 20%) ;   // #333
+$gray:                   lighten(#000, 33.5%) ; // #555
+$gray-light:             lighten(#000, 46.7%) ; // #777
+$gray-lighter:           lighten(#000, 93.5%) ; // #eee
+
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-font-weight:                normal ;
+
+$btn-default-color:              #333 ;
+$btn-default-bg:                 #fff ;
+$btn-default-border:             #ccc ;
+
+$btn-primary-color:              #fff ;
+$btn-primary-bg:                 $brand-primary ;
+$btn-primary-border:             darken($btn-primary-bg, 5%) ;
+
+$btn-success-color:              #fff ;
+$btn-success-bg:                 $brand-success ;
+$btn-success-border:             darken($btn-success-bg, 5%) ;
+
+$btn-info-color:                 #fff ;
+$btn-info-bg:                    $brand-info ;
+$btn-info-border:                darken($btn-info-bg, 5%) ;
+
+$btn-warning-color:              $gray-dark ;
+$btn-warning-bg:                 $brand-warning ;
+$btn-warning-border:             darken($btn-warning-bg, 5%) ;
+
+$btn-danger-color:               #fff ;
+$btn-danger-bg:                  $brand-danger ;
+$btn-danger-border:              darken($btn-danger-bg, 5%) ;
+
+$btn-link-disabled-color:        $gray-light ;
+
 
