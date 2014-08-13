@@ -1,31 +1,56 @@
 /* 
-	Efnep - Cornerstone
-*/
+	Efnep - Cornerstone 
+	
 /*
 Variables listed in order
-	
+	Global 
+		Links 
+		Colors
+		Border Radius
 	Header
 	Navigation bar
 	Widgets
 	Content
 	Footer
-	Global 
-		Colors
-		Buttons
-
+	Megafooter
+	Buttons
 */
 
+//////////////////////////////////////////////////// 
+//Global Default 
+//Link Colors 
+$link-color:            #388ac3;
+$link-hover-color:      darken($link-color, 15%) !default;
+
+// Primary Colors (Bootstrap)
+$brand-primary:         #428bca !default;
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+// Secondary Colors (Bootstrap)
+$gray-darker:            lighten(#000, 13.5%) !default; // #222
+$gray-dark:              lighten(#000, 20%) !default;   // #333
+$gray:                   lighten(#000, 33.5%) !default; // #555
+$gray-light:             lighten(#000, 46.7%) !default; // #777
+$gray-lighter:           lighten(#000, 93.5%) !default; // #eee
+
+// Border Radius
+$border-radius-base:	0;
+$border-radius-large:	0;
+$border-radius-small:	0;
+
+
+
 // Header
-$header_border:		#000;
+$header_border:		#000000;
 
 $title_parent:			#879197;
 $title_parentHover:		#000;
 
 $title_txt: 			#879197;
 $title_txtHover:		#000;
-
-
-
 
 // Navigation bar
 $navbar-margin-bottom: 0;
@@ -48,14 +73,19 @@ $dropdown-link-active-color:     #000 ;
 $dropdown-link-active-bg:        #d0d0d0 ;
 
 
-
-
 // Widgets 
-$widget-padding: 1em;
-$widget-border-color: #eaeaea;
-$widget-head-border-width: 0;
-$widget-head-size: 150%;
-$widget-head-color: #4d628c;
+$widget-border-color:		#ccc					!default;
+$widget-border-radius:		$border-radius-base 	!default;
+$widget-border-width:		1px		 				!default;
+$widget-margin:				0 0 1.5em 0				!default;
+$widget-padding:			0						!default;
+$widget-bg:					#fff					!default;
+$widget-content-margin:		1em;
+$widget-color:				#000					!default;
+$widget-size:				1em						!default;
+$widget-link-color:			$link-color				!default;
+$widget-link-hover:			$link-hover-color		!default;
+
 
 	// Widgets - Calendar
 	$uc-ecw-month-bg:			#f5f5f5;
@@ -64,20 +94,16 @@ $widget-head-color: #4d628c;
 	$uc-ecw-day-color:		#454545;
 
 
-
 // Content
 $contentPadding:			31px 0 4em;
 
 $headings-font-weight: bold;
 $headings-color:#0c285b;
 
-$border-radius-base:	0;
-$border-radius-large:	0;
-$border-radius-small:	0;
 
 
 // Footer
-$footers-border-color:	#2cb04a;
+$footers-border-color:	#000000;
 $footers-border-width:	1px 0 0 0;
 
 $footers-margin: 0;
@@ -85,64 +111,37 @@ $footers-bg: #ffffff;
 $footers-link-color: #5a595a;
 $footers-link-hover: #343434;
 
+// Mega Footer 
+$megafooter-bg:					transparent !default;
+$megafooter-widget-bg:			transparent !default;
 
+//For each of Bootstrap's buttons, define text, background and border color.
+$btn-font-weight:                normal !default;
 
-// Global Default
-$font-size-base:          14px ;
+$btn-default-color:              #333 !default;
+$btn-default-bg:                 #fff !default;
+$btn-default-border:             #ccc !default;
 
-$font-size-h1:			  ceil(($font-size-base * 1.7));
-$font-size-h2:            floor(($font-size-base * 1.5)) ;
-$font-size-h3:            ceil(($font-size-base * 1.15)) ;
-$font-size-h4:            ceil(($font-size-base * 1.15)) ;
-$font-size-h5:            $font-size-base ;
-$font-size-h6:            ceil(($font-size-base * 0.85)) ; // ~12px
+$btn-primary-color:              #fff !default;
+$btn-primary-bg:                 $brand-primary !default;
+$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
 
-$headings-font-weight: 500;
+$btn-success-color:              #fff !default;
+$btn-success-bg:                 $brand-success !default;
+$btn-success-border:             darken($btn-success-bg, 5%) !default;
 
-$link-color:            #388ac3;
-$link-hover-color:      darken($link-color, 15%) ;
+$btn-info-color:                 #fff !default;
+$btn-info-bg:                    $brand-info !default;
+$btn-info-border:                darken($btn-info-bg, 5%) !default;
 
-// Primary Colors 
-$brand-primary:         #2cb04a ; //Green
-$brand-success:         #563590 ; //Purple
-$brand-info:            #f56d33 ; //Orange
-$brand-warning:         #fde128 ; //Yellow
-$brand-danger:          #d02110 ; //Red
+$btn-warning-color:              #fff !default;
+$btn-warning-bg:                 $brand-warning !default;
+$btn-warning-border:             darken($btn-warning-bg, 5%) !default;
 
-$gray-darker:            lighten(#000, 13.5%) ; // #222
-$gray-dark:              lighten(#000, 20%) ;   // #333
-$gray:                   lighten(#000, 33.5%) ; // #555
-$gray-light:             lighten(#000, 46.7%) ; // #777
-$gray-lighter:           lighten(#000, 93.5%) ; // #eee
+$btn-danger-color:               #fff !default;
+$btn-danger-bg:                  $brand-danger !default;
+$btn-danger-border:              darken($btn-danger-bg, 5%) !default;
 
-//## For each of Bootstrap's buttons, define text, background and border color.
-
-$btn-font-weight:                normal ;
-
-$btn-default-color:              #333 ;
-$btn-default-bg:                 #fff ;
-$btn-default-border:             #ccc ;
-
-$btn-primary-color:              #fff ;
-$btn-primary-bg:                 $brand-primary ;
-$btn-primary-border:             darken($btn-primary-bg, 5%) ;
-
-$btn-success-color:              #fff ;
-$btn-success-bg:                 $brand-success ;
-$btn-success-border:             darken($btn-success-bg, 5%) ;
-
-$btn-info-color:                 #fff ;
-$btn-info-bg:                    $brand-info ;
-$btn-info-border:                darken($btn-info-bg, 5%) ;
-
-$btn-warning-color:              $gray-dark ;
-$btn-warning-bg:                 $brand-warning ;
-$btn-warning-border:             darken($btn-warning-bg, 5%) ;
-
-$btn-danger-color:               #fff ;
-$btn-danger-bg:                  $brand-danger ;
-$btn-danger-border:              darken($btn-danger-bg, 5%) ;
-
-$btn-link-disabled-color:        $gray-light ;
+$btn-link-disabled-color:        $gray-light !default;
 
 
