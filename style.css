@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,300italic);
+@import url(http://fonts.googleapis.com/css?family=Handlee);
 /*
  Theme Name:   Efnep - Cornerstone
  Description:  Efenp theme based off of Cornerstone
@@ -11,9 +13,11 @@
 	
 /*
 Variables listed in order
-	Global 
-		Links 
+	Global
 		Colors
+		Fonts
+		Links 
+		Text
 		Border Radius
 	Header
 	Navigation bar
@@ -1192,11 +1196,11 @@ textarea {
 }
 
 a {
-  color: #388ac3;
+  color: #3d90cc;
   text-decoration: none;
 }
 a:hover, a:focus {
-  color: #276088;
+  color: #276795;
   text-decoration: underline;
 }
 a:focus {
@@ -1333,15 +1337,15 @@ h6 .small, .h6 small,
 }
 
 h1, .h1 {
-  font-size: 36px;
+  font-size: 26px;
 }
 
 h2, .h2 {
-  font-size: 30px;
+  font-size: 23px;
 }
 
 h3, .h3 {
-  font-size: 24px;
+  font-size: 21px;
 }
 
 h4, .h4 {
@@ -3538,7 +3542,7 @@ select[multiple].input-lg,
 }
 
 .btn-link {
-  color: #388ac3;
+  color: #3d90cc;
   font-weight: normal;
   cursor: pointer;
   border-radius: 0;
@@ -3552,7 +3556,7 @@ select[multiple].input-lg,
   border-color: transparent;
 }
 .btn-link:hover, .btn-link:focus {
-  color: #276088;
+  color: #276795;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -4140,7 +4144,7 @@ tbody.collapse.in {
 }
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #388ac3;
+  border-color: #3d90cc;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4576,25 +4580,25 @@ tbody.collapse.in {
   border-color: transparent;
 }
 .navbar-default .navbar-brand {
-  color: black;
+  color: #3d90cc;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: black;
+  color: #2d75a9;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
   color: #777777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: black;
+  color: #3d90cc;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: grey;
+  color: #563591;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: darkgrey;
-  background-color: transparent;
+  color: #555555;
+  background-color: #2b1a49;
 }
 .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
   color: #cccccc;
@@ -4614,20 +4618,20 @@ tbody.collapse.in {
   border-color: transparent;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  background-color: transparent;
-  color: darkgrey;
+  background-color: #2b1a49;
+  color: #555555;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: black;
+    color: #3d90cc;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: grey;
+    color: #563591;
     background-color: transparent;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: darkgrey;
-    background-color: transparent;
+    color: #555555;
+    background-color: #2b1a49;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
     color: #cccccc;
@@ -4635,16 +4639,16 @@ tbody.collapse.in {
   }
 }
 .navbar-default .navbar-link {
-  color: black;
+  color: #3d90cc;
 }
 .navbar-default .navbar-link:hover {
-  color: grey;
+  color: #563591;
 }
 .navbar-default .btn-link {
-  color: black;
+  color: #3d90cc;
 }
 .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
-  color: grey;
+  color: #563591;
 }
 .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus, fieldset[disabled] .navbar-default .btn-link:hover, fieldset[disabled] .navbar-default .btn-link:focus {
   color: #cccccc;
@@ -4770,7 +4774,7 @@ tbody.collapse.in {
   padding: 6px 12px;
   line-height: 1.42857;
   text-decoration: none;
-  color: #388ac3;
+  color: #3d90cc;
   background-color: white;
   border: 1px solid #dddddd;
   margin-left: -1px;
@@ -4789,7 +4793,7 @@ tbody.collapse.in {
 .pagination > li > a:hover, .pagination > li > a:focus,
 .pagination > li > span:hover,
 .pagination > li > span:focus {
-  color: #276088;
+  color: #276795;
   background-color: #eeeeee;
   border-color: #dddddd;
 }
@@ -4987,7 +4991,7 @@ a.label:hover, a.label:focus {
   padding: 1px 5px;
 }
 a.list-group-item.active > .badge, .nav-pills > .active > a > .badge {
-  color: #388ac3;
+  color: #3d90cc;
   background-color: white;
 }
 .nav-pills > li > a > .badge {
@@ -5068,7 +5072,7 @@ a.badge:hover, a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #388ac3;
+  border-color: #3d90cc;
 }
 
 .alert {
@@ -7055,21 +7059,21 @@ code {
   font-size: 1.2em;
 }
 .page .uc-cal.uc-iconcal .uc-cal-list a.uc-cal-event .uc-cal-event-title {
-  color: #388ac3;
+  color: #3d90cc;
   font-size: 1em;
   line-height: 1.42857;
   margin-bottom: .3em;
   margin-top: .2em;
 }
 .page .uc-cal.uc-iconcal .uc-cal-list a.uc-cal-event .uc-cal-event-time {
-  color: #85b8dc;
+  color: #8ebee1;
   font-size: 1em;
 }
 .page .uc-cal.uc-iconcal .uc-cal-list a.uc-cal-event:hover .uc-cal-event-title {
-  color: #276088;
+  color: #276795;
 }
 .page .uc-cal.uc-iconcal .uc-cal-list a.uc-cal-event:hover .uc-cal-event-time {
-  color: #4a96cb;
+  color: #519cd1;
 }
 .page .uc-cal.uc-listcal .uc-cal-list {
   margin: 1em;
@@ -7091,17 +7095,17 @@ code {
 }
 .page .uc-cal.uc-listcal .uc-cal-list a.uc-cal-event .uc-cal-event-title {
   display: block;
-  color: #388ac3;
+  color: #3d90cc;
   line-height: 1.42857;
 }
 .page .uc-cal.uc-listcal .uc-cal-list a.uc-cal-event .uc-cal-event-time {
-  color: #85b8dc;
+  color: #8ebee1;
 }
 .page .uc-cal.uc-listcal .uc-cal-list a.uc-cal-event:hover .uc-cal-event-title {
-  color: #276088;
+  color: #276795;
 }
 .page .uc-cal.uc-listcal .uc-cal-list a.uc-cal-event:hover .uc-cal-event-time {
-  color: #4a96cb;
+  color: #519cd1;
 }
 
 /*	POSTS
@@ -7334,10 +7338,10 @@ object {
   color: black;
 }
 .widget a {
-  color: #388ac3;
+  color: #3d90cc;
 }
 .widget a:hover {
-  color: #276088;
+  color: #276795;
 }
 .widget .btn-primary,
 .widget .btn-success,
@@ -7494,21 +7498,21 @@ object {
   font-size: 1.2em;
 }
 .widget.uc-ecw .uc-cal.uc-iconcal .uc-cal-list a.uc-cal-event .uc-cal-event-title {
-  color: #388ac3;
+  color: #3d90cc;
   font-size: 1em;
   line-height: 1.42857;
   margin-bottom: .3em;
   margin-top: .2em;
 }
 .widget.uc-ecw .uc-cal.uc-iconcal .uc-cal-list a.uc-cal-event .uc-cal-event-time {
-  color: #85b8dc;
+  color: #8ebee1;
   font-size: 1em;
 }
 .widget.uc-ecw .uc-cal.uc-iconcal .uc-cal-list a.uc-cal-event:hover .uc-cal-event-title {
-  color: #276088;
+  color: #276795;
 }
 .widget.uc-ecw .uc-cal.uc-iconcal .uc-cal-list a.uc-cal-event:hover .uc-cal-event-time {
-  color: #4a96cb;
+  color: #519cd1;
 }
 .widget.uc-ecw .uc-cal.uc-listcal .uc-cal-list {
   margin: 1em;
@@ -7530,17 +7534,17 @@ object {
 }
 .widget.uc-ecw .uc-cal.uc-listcal .uc-cal-list a.uc-cal-event .uc-cal-event-title {
   display: block;
-  color: #388ac3;
+  color: #3d90cc;
   line-height: 1.42857;
 }
 .widget.uc-ecw .uc-cal.uc-listcal .uc-cal-list a.uc-cal-event .uc-cal-event-time {
-  color: #85b8dc;
+  color: #8ebee1;
 }
 .widget.uc-ecw .uc-cal.uc-listcal .uc-cal-list a.uc-cal-event:hover .uc-cal-event-title {
-  color: #276088;
+  color: #276795;
 }
 .widget.uc-ecw .uc-cal.uc-listcal .uc-cal-list a.uc-cal-event:hover .uc-cal-event-time {
-  color: #4a96cb;
+  color: #519cd1;
 }
 .widget.uc-ecw .uc-cal-link {
   margin: 1em;
@@ -7782,7 +7786,7 @@ q:before, table q:after {
   background-color: white;
   margin: 0;
   border: 0px solid transparent;
-  border-color: black;
+  border-color: #2cb04a;
   border-width: 1px 0 0 0;
 }
 
@@ -7844,10 +7848,11 @@ body.sticky #footers {
 
 body {
   background-color: #fafafa;
+  font-family: "Roboto", sans-serif;
 }
 
 #uc-header {
-  border-bottom-color: black;
+  border-bottom: 2px solid #2cb04a;
 }
 
 #masthead {
@@ -7876,6 +7881,27 @@ body {
 #masthead #uc-site-title a:hover {
   color: black;
 }
+#masthead .searchform {
+  display: none;
+}
+
+.metaslider .theme-default .nivo-caption {
+  height: 100%;
+  width: 270px;
+  margin-left: 10%;
+  padding: 10% 5% 5% 5%;
+  background: #3d90cc;
+  background: -moz-linear-gradient(top, #3d90cc 0%, #563591 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3d90cc), color-stop(100%, #563591));
+  background: -webkit-linear-gradient(top, #3d90cc 0%, #563591 100%);
+  background: -o-linear-gradient(top, #3d90cc 0%, #563591 100%);
+  background: -ms-linear-gradient(top, #3d90cc 0%, #563591 100%);
+  background: linear-gradient(to bottom, #3d90cc 0%, #563591 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d90cc', endColorstr='#563591',GradientType=0 );
+  font-family: "Handlee", cursive;
+  font-size: 24px;
+  color: #fff;
+}
 
 .site-content {
   margin-top: 60px;
@@ -7883,4 +7909,21 @@ body {
 .site-content .content-area #main article .entry-content .btn {
   min-width: 100px;
   padding: 10px 15px;
+}
+
+#footers {
+  background: url(img/diamond_upholstery.png);
+  opacity: 0.5;
+}
+#footers::before {
+  background: -moz-linear-gradient(top, #3d90cc 0%, #563591 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3d90cc), color-stop(100%, #563591));
+  background: -webkit-linear-gradient(top, #3d90cc 0%, #563591 100%);
+  background: -o-linear-gradient(top, #3d90cc 0%, #563591 100%);
+  background: -ms-linear-gradient(top, #3d90cc 0%, #563591 100%);
+  background: linear-gradient(to bottom, #3d90cc 0%, #563591 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d90cc', endColorstr='#563591',GradientType=0 );
+}
+#footers a {
+  color: #fff;
 }

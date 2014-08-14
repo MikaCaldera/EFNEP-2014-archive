@@ -3,9 +3,11 @@
 	
 /*
 Variables listed in order
-	Global 
-		Links 
+	Global
 		Colors
+		Fonts
+		Links 
+		Text
 		Border Radius
 	Header
 	Navigation bar
@@ -15,26 +17,43 @@ Variables listed in order
 	Megafooter
 	Buttons
 */
+//Custom Variables 
+$font-roboto: 	'Roboto', sans-serif;
+$font-handlee:  'Handlee', cursive;
 
 //////////////////////////////////////////////////// 
-//Global Default 
-//Link Colors 
-$link-color:            #388ac3;
-$link-hover-color:      darken($link-color, 15%) !default;
+//Global Default
+//Font Sizing 
+$font-size-base:          14px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
+$font-size-h1:            floor(($font-size-base * 1.9)) !default; // ~36px
+$font-size-h2:            floor(($font-size-base * 1.7)) !default; // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.5)) !default; // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
 // Primary Colors (Bootstrap)
-$brand-primary:         #428bca !default;
-$brand-success:         #5cb85c !default;
-$brand-info:            #5bc0de !default;
-$brand-warning:         #f0ad4e !default;
-$brand-danger:          #d9534f !default;
+$brand-primary:         #428bca;
+$brand-success:         #5cb85c;
+$brand-info:            #5bc0de;
+$brand-warning:         #f0ad4e;
+$brand-danger:          #d9534f;
 
 // Secondary Colors (Bootstrap)
-$gray-darker:            lighten(#000, 13.5%) !default; // #222
-$gray-dark:              lighten(#000, 20%) !default;   // #333
-$gray:                   lighten(#000, 33.5%) !default; // #555
-$gray-light:             lighten(#000, 46.7%) !default; // #777
-$gray-lighter:           lighten(#000, 93.5%) !default; // #eee
+$gray-darker:            lighten(#000, 13.5%); // #222
+$gray-dark:              lighten(#000, 20%);   // #333
+$gray:                   lighten(#000, 33.5%); // #555
+$gray-light:             lighten(#000, 46.7%); // #777
+$gray-lighter:           lighten(#000, 93.5%); // #eee
+
+// Text Color
+$text-color:            $gray-dark !default;
+
+//Link Colors 
+$link-color:            #3d90cc;
+$link-hover-color:      darken($link-color, 15%);
 
 // Border Radius
 $border-radius-base:	0;
@@ -44,7 +63,7 @@ $border-radius-small:	0;
 
 
 // Header
-$header_border:		#000000;
+$header_border:		#2cb04a;
 
 $title_parent:			#879197;
 $title_parentHover:		#000;
@@ -58,11 +77,15 @@ $navbar-collapse-max-height: none;
 $navbar-default-bg: transparent;
 $navbar-default-border: transparent;
 
-$navbar-default-link-color:                black;
-$navbar-default-link-hover-color:          grey;
-$navbar-default-link-hover-bg:             transparent;
-$navbar-default-link-active-color:         darkgrey;
-$navbar-default-link-active-bg:            transparent;
+
+// Navbar links
+$navbar-default-link-color:                #3d90cc !default;
+$navbar-default-link-hover-color:          #563591 !default;
+$navbar-default-link-hover-bg:             transparent !default;
+$navbar-default-link-active-color:         #555 !default;
+$navbar-default-link-active-bg:            #2b1a49 !default;
+$navbar-default-link-disabled-color:       #ccc !default;
+$navbar-default-link-disabled-bg:          transparent !default;
 
 $dropdown-bg:                    #e9e9e9 ;
 $dropdown-link-color:            #444 ;
@@ -103,7 +126,7 @@ $headings-color:#0c285b;
 
 
 // Footer
-$footers-border-color:	#000000;
+$footers-border-color:	$header_border;
 $footers-border-width:	1px 0 0 0;
 
 $footers-margin: 0;
@@ -112,36 +135,36 @@ $footers-link-color: #5a595a;
 $footers-link-hover: #343434;
 
 // Mega Footer 
-$megafooter-bg:					transparent !default;
-$megafooter-widget-bg:			transparent !default;
+$megafooter-bg:					transparent;
+$megafooter-widget-bg:			transparent;
 
 //For each of Bootstrap's buttons, define text, background and border color.
-$btn-font-weight:                normal !default;
+$btn-font-weight:                normal;
 
-$btn-default-color:              #333 !default;
-$btn-default-bg:                 #fff !default;
-$btn-default-border:             #ccc !default;
+$btn-default-color:              #333;
+$btn-default-bg:                 #fff;
+$btn-default-border:             #ccc;
 
-$btn-primary-color:              #fff !default;
-$btn-primary-bg:                 $brand-primary !default;
-$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+$btn-primary-color:              #fff;
+$btn-primary-bg:                 $brand-primary;
+$btn-primary-border:             darken($btn-primary-bg, 5%);
 
-$btn-success-color:              #fff !default;
-$btn-success-bg:                 $brand-success !default;
-$btn-success-border:             darken($btn-success-bg, 5%) !default;
+$btn-success-color:              #fff;
+$btn-success-bg:                 $brand-success;
+$btn-success-border:             darken($btn-success-bg, 5%);
 
-$btn-info-color:                 #fff !default;
-$btn-info-bg:                    $brand-info !default;
-$btn-info-border:                darken($btn-info-bg, 5%) !default;
+$btn-info-color:                 #fff;
+$btn-info-bg:                    $brand-info;
+$btn-info-border:                darken($btn-info-bg, 5%);
 
-$btn-warning-color:              #fff !default;
-$btn-warning-bg:                 $brand-warning !default;
-$btn-warning-border:             darken($btn-warning-bg, 5%) !default;
+$btn-warning-color:              #fff;
+$btn-warning-bg:                 $brand-warning;
+$btn-warning-border:             darken($btn-warning-bg, 5%);
 
-$btn-danger-color:               #fff !default;
-$btn-danger-bg:                  $brand-danger !default;
-$btn-danger-border:              darken($btn-danger-bg, 5%) !default;
+$btn-danger-color:               #fff;
+$btn-danger-bg:                  $brand-danger;
+$btn-danger-border:              darken($btn-danger-bg, 5%);
 
-$btn-link-disabled-color:        $gray-light !default;
+$btn-link-disabled-color:        $gray-light;
 
 

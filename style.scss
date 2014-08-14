@@ -9,13 +9,19 @@
 /* These are the global imports do not delete or alter */
 @import "sass/variables.scss"; 
 @import "../cornerstone/style.scss";
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,300italic);
+@import url(http://fonts.googleapis.com/css?family=Handlee);
+
+
+
 
 body {
 	background-color:#fafafa;
+	font-family: $font-roboto;
 }
 
 #uc-header {
-	border-bottom-color:$header_border;
+	border-bottom:2px solid $header_border;
 }
 #masthead {
 	background: #fff;
@@ -44,9 +50,36 @@ body {
 			color:$title_txtHover; 
 		}
 	}
+	.searchform{
+		display:none;
+	}
 
 }
-// //Site Content
+
+//Nivo Slider Caption
+.metaslider{
+	.theme-default{
+		.nivo-caption{
+			height:100%;
+			width: 270px;
+			margin-left: 10%;
+			padding: 10% 5% 5% 5%;
+			background: #3d90cc;
+			background: -moz-linear-gradient(top,  #3d90cc 0%, #563591 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3d90cc), color-stop(100%,#563591));
+			background: -webkit-linear-gradient(top,  #3d90cc 0%,#563591 100%);
+			background: -o-linear-gradient(top,  #3d90cc 0%,#563591 100%);
+			background: -ms-linear-gradient(top,  #3d90cc 0%,#563591 100%);
+			background: linear-gradient(to bottom,  #3d90cc 0%,#563591 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d90cc', endColorstr='#563591',GradientType=0 );
+			font-family: $font-handlee;
+			font-size:24px;
+			color:#fff;
+			
+		}
+	}
+}
+//Site Content
 .site-content{
 	margin-top:60px;
 	.content-area{
@@ -73,5 +106,42 @@ body {
 
 
 //Global Content 
+
+//Megafooter
+#footers{
+	background: url(img/diamond_upholstery.png);
+	opacity:0.5;
+	&::before{
+	background: -moz-linear-gradient(top,  #3d90cc 0%, #563591 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3d90cc), color-stop(100%,#563591));
+	background: -webkit-linear-gradient(top,  #3d90cc 0%,#563591 100%);
+	background: -o-linear-gradient(top,  #3d90cc 0%,#563591 100%);
+	background: -ms-linear-gradient(top,  #3d90cc 0%,#563591 100%);
+	background: linear-gradient(to bottom,  #3d90cc 0%,#563591 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d90cc', endColorstr='#563591',GradientType=0 );
+	}
+	a{
+		color:#fff;
+	}
+	// background: -moz-linear-gradient(top,  rgba(61, 144, 204, 0.5) 0%, rgba(86, 53, 145, 0.5) 100%),url(img/diamond_upholstery.png);;
+	// background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(61, 144, 204, 0.5)), color-stop(100%,rgba(86, 53, 145, 0.5))), url(img/diamond_upholstery.png);;
+	// background: -webkit-linear-gradient(top,  rgba(61, 144, 204, 0.5) 0%,rgba(86, 53, 145, 0.5) 100%), url(img/diamond_upholstery.png);;
+	// background: -o-linear-gradient(top,  rgba(61, 144, 204, 0.5) 0%,rgba(86, 53, 145, 0.5) 100%), url(img/diamond_upholstery.png);;
+	// background: -ms-linear-gradient(top,  rgba(61, 144, 204, 0.5) 0%,rgba(86, 53, 145, 0.5) 100%), url(img/diamond_upholstery.png);;
+	// background: linear-gradient(to bottom,  rgba(61, 144, 204, 0.5) 0%,rgba(86, 53, 145, 0.5) 100%), url(img/diamond_upholstery.png);;
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(61, 144, 204, 0.5)', endColorstr='rgba(86, 53, 145, 0.5)',GradientType=0 );
+	#mega-footer{
+	}
+	#footer{
+		// background:yellow;
+		.site-footer{
+			#uc-footer-links{
+
+			}
+
+		}
+	}
+}
+
 
 
