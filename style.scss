@@ -55,8 +55,245 @@ body {
 	}
 
 }
+// -- Widgets 
+//Home Page Styles
+.widget{
+	display:block;
+	position:relative;
+	border:none;
+	border-radius:0px 0px 0px 0px;
+	border-top: 2px solid $gray-light;
+	margin-bottom:50px;
+	color:$gray-light;
+	.widget-head{
+		background:none;
+		padding:0px;
+		border:none;
+		.widget-title{
+			padding: 18px 0px 10px 0px;
+			color:$gray-light;
+			font-family: $font-roboto;
+			font-size:16px;
+			line-height:1.4em;
+		}
+	}
+	.table-responsive{
+		border:none;
+	}
+	ul{
+		list-style:none;
+		padding:0px;
+		margin:0px;
+	}
+	a{
+		color:$brand-primary;
+		&:hover{
+			color:$brand-primary;
+		}
+	}
+	//Text Box 
+	&.widget_text{
+		border-top:none;
+		margin:0px;
+		.textwidget{
+			margin:0px 0px 20px 0px;
+		}
+	}
 
-//Nivo Slider Caption
+	//Slide Show
+	&.uc-ssw{
+		border-top:none;
+		.slider-wrapper {
+			padding:0px;
+			.nivoSlider{
+				img{}
+				.nivo-caption{
+					bottom:30px;
+					width:85%;
+					padding: 4%;
+					border-right: 45px solid $brand-info;
+					background:$gray-darker;
+					font-family: $font-handlee;
+					font-style: italic;
+					font-size: 22px;
+					letter-spacing:1px;
+
+				}
+			}	
+		}
+	}
+	//Opens Hours 
+	&.uc-hours-widget{
+		.content{
+			.table{
+				color:$gray-light;
+				#uc-hours-caption{
+					display:none;
+					}
+				> thead, > tbody, > tfoot {
+					> tr {
+						> th, > td {
+						padding:3px;
+						border:none;
+						font-weight: 100;
+						}
+						.uc-day{
+							@media screen and (min-width: $break-medium) and (max-width: $break-medium1) {
+								font-weight:100;
+								font-size:11px;
+							}
+						}
+						.open-time, .hours-close{
+							font-style: italic;	
+							font-weight:100;
+							@media screen and (min-width: $break-medium) and (max-width: $break-medium1) {
+								font-weight:100;
+								font-size:11px;
+							}				
+						}
+					}
+				}
+			}
+		}
+	}  
+	//Calendar 
+	&.uc-ecw{
+		.uc-cal.uc-iconcal{
+			// padding:0px;
+			.uc-cal-list{
+				margin:20px 0px 0px 0px;
+				.uc-cal-item{
+					// margin: 1.6em 0;
+					a{
+						margin-top:-10px;
+						&:hover{
+							text-decoration:none;
+							color:$brand-primary;
+						}
+						&.uc-cal-event{
+							.uc-cal-event-date{
+								left:0px;
+								-moz-box-shadow: none;
+								-webkit-box-shadow: none;
+								box-shadow: none;
+								.uc-cal-event-month{
+									height:17px;
+									padding:4px 0px 0px 0px;
+								}
+								.uc-cal-event-day{
+
+								}
+							}
+							.uc-cal-event-title, .uc-cal-event-time{
+								color:$gray-light;
+								font-size:12px;
+							}
+							.uc-cal-event-title{
+								line-height: 1.4em;
+								padding-top:0px;
+								max-height: 40px;
+								overflow: hidden;
+								margin-top:-2px;
+								font-size:12px;
+								&:hover{
+									color:$brand-primary;
+								} 
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	//Search
+	&.widget_search{
+		.widget-head{
+			display:none;
+		}
+		.search-box{
+		list-style: none;
+			.navbar-form{
+				margin-top: 20px;
+				padding:0px 0px;
+			}
+		}
+	}
+	//Recent Entries
+	&.widget_recent_entries{
+		ul{
+			width:100%;
+			li{
+				position:relative;
+				display:block;
+				a{
+					color:$brand-primary;
+					&:hover{
+						color:$brand-success;
+					}
+				}
+				span{
+				position:absolute;
+				right:0px;
+				}
+			}
+		}
+	}
+	//Simple Icons
+	&.simple-social-icons{
+		ul{
+		margin:0px !important;
+		padding:0px;
+		position:relative;
+		left:-6px;
+		}
+	}
+	//Image Insert Widget 
+	&.widget_sp_image{
+		position:relative;
+		display:block;
+		border-top:none;
+		.widget-title{
+			display:none;
+		}
+		.widget_sp_image-description{
+			position:absolute;
+			top:0px;
+			left:0px;
+			height:100%;
+			width: 270px;
+			margin-left: 10%;
+			padding: 7% 2% 5% 2%;
+			background: #3d90cc;
+			background: -moz-linear-gradient(top,  #3d90cc 0%, #563591 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3d90cc), color-stop(100%,#563591));
+			background: -webkit-linear-gradient(top,  #3d90cc 0%,#563591 100%);
+			background: -o-linear-gradient(top,  #3d90cc 0%,#563591 100%);
+			background: -ms-linear-gradient(top,  #3d90cc 0%,#563591 100%);
+			background: linear-gradient(to bottom,  #3d90cc 0%,#563591 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d90cc', endColorstr='#563591',GradientType=0 );
+			font-family: $font-handlee;
+			font-size:18px;
+			color:#fff;
+			opacity: 0.65;
+		}
+		img{
+			width:100%;
+			max-height: none;
+			margin:0px;
+		}
+		p{
+			padding:15px 10px;
+			line-height: 1.5em;
+			max-height: 80%;
+			overflow: hidden;
+		}
+
+	}
+}
+
+
+
+//Slider CSS
 .metaslider{
 	.theme-default{
 		.nivo-caption{

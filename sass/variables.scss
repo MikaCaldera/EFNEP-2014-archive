@@ -21,6 +21,14 @@ Variables listed in order
 $font-roboto: 	'Roboto', sans-serif;
 $font-handlee:  'Handlee', cursive;
 
+//Break Points 
+$break-xsmall: 420px;
+$break-small: 500px;
+$break-medium: 760px;
+$break-medium1:	990px;
+$break-large: 1200px;
+
+
 //////////////////////////////////////////////////// 
 //Global Default
 //Font Sizing 
@@ -87,10 +95,10 @@ $navbar-default-link-active-bg:            #2b1a49 !default;
 $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
 
-$dropdown-bg:                    #e9e9e9 ;
+$dropdown-bg:                    lighten(#000, 93.5%); // #eee
 $dropdown-link-color:            #444 ;
 $dropdown-link-hover-color:      #fff ;
-$dropdown-link-hover-bg:         #b8000f ;
+$dropdown-link-hover-bg:         lighten(#000, 93.5%); // #eee
 
 $dropdown-link-active-color:     #000 ;
 $dropdown-link-active-bg:        #d0d0d0 ;
