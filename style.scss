@@ -60,21 +60,13 @@ body {
 .widget{
 	display:block;
 	position:relative;
-	border:none;
-	border-radius:0px 0px 0px 0px;
-	border-top: 2px solid $gray-light;
-	margin-bottom:50px;
 	color:$gray-light;
+	border:none;
+	background-color: #fafafa;
 	.widget-head{
-		background:none;
-		padding:0px;
-		border:none;
 		.widget-title{
-			padding: 18px 0px 10px 0px;
 			color:$gray-light;
 			font-family: $font-roboto;
-			font-size:16px;
-			line-height:1.4em;
 		}
 	}
 	.table-responsive{
@@ -252,8 +244,11 @@ body {
 		position:relative;
 		display:block;
 		border-top:none;
-		.widget-title{
+		.widget-head{
 			display:none;
+			.widget-title{
+				display:none;
+			}
 		}
 		.widget_sp_image-description{
 			position:absolute;
@@ -291,8 +286,14 @@ body {
 	}
 }
 
-
-
+//Drop down menus
+.dropdown-menu{
+	li{
+		a{
+			text-decoration: none;
+		}
+	}
+}
 //Slider CSS
 .metaslider{
 	.theme-default{
@@ -316,6 +317,8 @@ body {
 		}
 	}
 }
+
+
 //Site Content
 .site-content{
 	margin-top:60px;
@@ -340,10 +343,6 @@ body {
 	}
 
 }
-
-
-//Global Content 
-
 //Megafooter
 #footers{
 	background-color: #553490;

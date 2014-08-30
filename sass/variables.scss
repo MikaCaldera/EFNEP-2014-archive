@@ -48,6 +48,7 @@ $brand-success:         #5cb85c;
 $brand-info:            #5bc0de;
 $brand-warning:         #f0ad4e;
 $brand-danger:          #d9534f;
+$brand-extra:			#563591;
 
 // Secondary Colors (Bootstrap)
 $gray-darker:            lighten(#000, 13.5%); // #222
@@ -87,19 +88,19 @@ $navbar-default-border: transparent;
 
 
 // Navbar links
-$navbar-default-link-color:                #3d90cc !default;
-$navbar-default-link-hover-color:          #563591 !default;
+$navbar-default-link-color:                lighten($brand-primary, 15%); 
+$navbar-default-link-hover-color:          $brand-success; 
 $navbar-default-link-hover-bg:             transparent !default;
-$navbar-default-link-active-color:         #555 !default;
-$navbar-default-link-active-bg:            #2b1a49 !default;
+$navbar-default-link-active-color:         lighten(#000, 99.5%); 
+$navbar-default-link-active-bg:            $brand-info;
 $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
 
-$dropdown-bg:                    lighten(#000, 93.5%); // #eee
-$dropdown-link-color:            #444 ;
-$dropdown-link-hover-color:      #fff ;
-$dropdown-link-hover-bg:         lighten(#000, 93.5%); // #eee
-
+$dropdown-bg:                    lighten(#000, 99.5%); 
+$dropdown-link-color:            lighten($brand-primary, 15%); 
+$dropdown-link-hover-color:      $brand-success; 
+$dropdown-link-hover-bg:       	 lighten(#000, 96.5%); 
+	
 $dropdown-link-active-color:     #000 ;
 $dropdown-link-active-bg:        #d0d0d0 ;
 
