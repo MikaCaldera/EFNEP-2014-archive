@@ -120,10 +120,10 @@ $widget-link-hover:			$link-hover-color		!default;
 
 
 	// Widgets - Calendar
-	$uc-ecw-month-bg:			#f5f5f5;
-	$uc-ecw-month-color:		#2e77b0;
-	$uc-ecw-day-bg:			#f5f5f5;
-	$uc-ecw-day-color:		#454545;
+	$uc-ecw-month-bg:		$brand-primary;
+	$uc-ecw-month-color:	#fff;
+	$uc-ecw-day-bg:			$brand-success;
+	$uc-ecw-day-color:		#fff;
 
 
 // Content
