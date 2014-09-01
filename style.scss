@@ -16,8 +16,7 @@
 
 
 body {
-	background-color:#fafafa;
-	font-family: $font-roboto;
+	background-color:#fafafa
 }
 
 #uc-header {
@@ -64,13 +63,23 @@ body {
 	border:none;
 	background-color: #fafafa;
 	.widget-head{
+		color: $brand-extra;
+
+		border: none;
+		padding: 0.5em 0.5em 0.5em 0em;
 		.widget-title{
-			color:$gray-light;
-			font-family: $font-roboto;
+
+			color: $brand-extra;
+			font-weight:800;
 		}
 	}
 	.table-responsive{
 		border:none;
+	}
+	ol{
+		margin:0px;
+		padding:0px;
+		list-style:none;
 	}
 	ul{
 		list-style:none;
@@ -80,7 +89,7 @@ body {
 	a{
 		color:$brand-primary;
 		&:hover{
-			color:$brand-primary;
+			color:$brand-warning;
 		}
 	}
 	//Text Box 
@@ -100,16 +109,6 @@ body {
 			.nivoSlider{
 				img{}
 				.nivo-caption{
-					bottom:30px;
-					width:85%;
-					padding: 4%;
-					border-right: 45px solid $brand-info;
-					background:$gray-darker;
-					font-family: $font-handlee;
-					font-style: italic;
-					font-size: 22px;
-					letter-spacing:1px;
-
 				}
 			}	
 		}
@@ -152,6 +151,7 @@ body {
 	&.uc-ecw{
 		.uc-cal.uc-iconcal{
 			.uc-cal-list{
+				margin:0px;
 				.uc-cal-item{
 					a{
 						&:hover{
@@ -267,8 +267,8 @@ body {
 			line-height: 1.5em;
 			max-height: 80%;
 			overflow: hidden;
-			font-family: $font-handlee;
-			font-size:18px;
+			font-size:14px;
+			font-weight:300;
 			color:#fff;
 			opacity: 1;
 		}
@@ -314,7 +314,11 @@ body {
 	margin-top:60px;
 	.content-area{
 		#main{
+			background-color: transparent;
 			article{
+				.post{
+					background-color: transparent;
+				}
 				.entry-header{
 
 				}
@@ -333,26 +337,123 @@ body {
 	}
 
 }
+//Content Style 
+blockquote{
+	font-family: $font-handlee;
+}
+h1{
+	color: $brand-primary;		
+}
+h2{
+	color: $brand-success;
+}
+h3{
+	color: $gray;
+}
+h4{
+	color: $gray;
+}
+h5{
+	color: $gray-light;
+}
+h6{
+	color: $gray-lighter;
+}
+strong{
+	color: $gray;
+}
+p{
+	color:$gray-light;
+}
+.wp-caption-text{
+	font-family: $font-handlee;
+}
+.cat-links, .tags-links {
+	a{
+		color: $brand-success;
+		&:hover{
+			color: $brand-warning;
+		}
+	}
+}
+.edit-link{
+	margin-top: 10px;
+	display:block;
+	a{
+		display:block;
+		width: 100px;
+		padding: 10px 15px;
+		color:#fff;
+		text-decoration: none;
+		text-align:center;
+		background-color: $brand-info;
+		border-color: $btn-info-border;
+		&:hover{
+			background-color: $brand-success;
+		}
+	}
+}
+.external{
+	.glyphicon-new-window:before {
+		padding-left: 5px;
+	}
+}
 //Megafooter
 #footers{
-	background-color: #553490;
-	background: url(img/footer-bg.png);
-	background-repeat: repeat-x;
+	background-color: $brand-extra;
+	background: url(img/footer-bg.png) repeat-x;
 	background-position: center top;
 	opacity:1;
+	color:#fff;
 	&::before{
-
 	}
 	a{
-		color:#fff;
+		color:#ddd;
+		&:hover{
+			color:#fff;
+			text-decoration: none;
+		}
 	}
 	#mega-footer{
+		max-height: 203px;
+		overflow: hidden;
+		.container{
+			max-height: 190px;
+			overflow: hidden;
+			aside{
+				.widget{
+					color:#fff;
+					.widget-head{
+						.widget-title{
+							color:#ddd;
+						}
+					}
+					a{
+						color:#ddd;
+						&:hover{
+							color:#fff;
+							text-decoration: none;
+						}
+					}
+					.table > tbody > tr > td, .table > tbody > tr >th{
+						border-top: none; 
+					}
+				}
+			}
+		}
 	}
 	#footer{
-		// background:yellow;
+		background-color: $brand-extra;
 		.site-footer{
 			#uc-footer-links{
-
+				color:#fff;
+				a{
+					color:#ddd;
+					&:hover{
+						color:#fff;
+						text-decoration: none;
+					}
+				}
 			}
 
 		}
