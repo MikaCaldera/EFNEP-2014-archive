@@ -43,12 +43,12 @@ $font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-h5:            $font-size-base !default;
 $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
 // Primary Colors (Bootstrap)
-$brand-primary:         #428bca;
-$brand-success:         #5cb85c;
-$brand-info:            #5bc0de;
-$brand-warning:         #f0ad4e;
-$brand-danger:          #d9534f;
-$brand-extra:			#563591;
+$brand-primary:         #428bca; //Blue
+$brand-success:         #5cb85c; //Green
+$brand-info:            #5bc0de; //Sky Blue
+$brand-warning:         #f0ad4e; //Orange
+$brand-danger:          #d9534f; //Red
+$brand-extra:			#563591; //Purple
 
 // Secondary Colors (Bootstrap)
 $gray-darker:            lighten(#000, 13.5%); // #222
