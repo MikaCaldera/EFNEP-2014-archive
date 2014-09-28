@@ -153,8 +153,14 @@ body {
 			.uc-cal-list{
 				margin:0px;
 				.uc-cal-item{
+					&:hover{
+						color:$brand-warning;
+					}
 					a{
+						color: $brand-primary;
 						&:hover{
+							color: $brand-warning;
+							text-decoration: none;
 						}
 						&.uc-cal-event{
 							.uc-cal-event-date{
@@ -176,9 +182,15 @@ body {
 								}
 							}
 							.uc-cal-event-title, .uc-cal-event-time{
+								color:$brand-primary;
+								&:hover{
+									color:$brand-warning;
+								}
 							}
 							.uc-cal-event-title{
+								color:$brand-primary;
 								&:hover{
+									color:$brand-warning;
 								} 
 							}
 						}
