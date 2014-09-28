@@ -8127,7 +8127,11 @@ body {
   opacity: 1;
 }
 
+.dropdown-menu {
+  padding: 0px 0px;
+}
 .dropdown-menu li a {
+  padding: 10px 8px;
   text-decoration: none;
 }
 

@@ -290,8 +290,10 @@ body {
 
 //Drop down menus
 .dropdown-menu{
+	padding: 0px 0px;
 	li{
 		a{
+			padding: 10px 8px;
 			text-decoration: none;
 		}
 	}
