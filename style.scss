@@ -54,6 +54,11 @@ body {
 	}
 
 }
+#site-navigation{
+	&.navbar{
+		border:none;
+	}
+}
 // -- Widgets 
 //Home Page Styles
 .widget{

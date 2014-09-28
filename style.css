@@ -7935,6 +7935,10 @@ body {
   display: none;
 }
 
+#site-navigation.navbar {
+  border: none;
+}
+
 .widget {
   display: block;
   position: relative;
